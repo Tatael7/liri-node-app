@@ -54,16 +54,23 @@ var movie = function() {
     console.log(pelicula);
     var URL = "http://www.omdbapi.com/?t=" + pelicula + "&y=&plot=short&apikey=trilogy";
     console.log(URL);
-    axios.get(URL).then(
-        function(response) {
+    axios.get(URL).then(function(response) {
             var jsonData = response.data;
-            console.log(jsonData);
-            // var movieData = [
+            //console.log(jsonData);
+             var movieData = [
+            "Title: " + jsonData.Title,
+            "Year: " + jsonData.Year //year
+            //imdb rating
+            //rotten tomatos rating
+            //country
+            //language 
+            //plot
+            //actors 
+             ];
 
-            // ]
-        }
-    )
-}
+             console.log(movieData);
+        });
+};
 
 
 // var music = function() {

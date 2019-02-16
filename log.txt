@@ -10,4 +10,8 @@ Date: 2019-03-07T18:00:00shawn mendesVenue: Ziggo Dome
 
 Location: Nieuw-amsterdam
 
-Date: 2019-03-07T18:00:00
+Date: 2019-03-07T18:00:00blaqk audioVenue: The Observatory North Park
+
+Location: San Diego
+
+Date: 2019-03-14T19:00:21
