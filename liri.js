@@ -17,7 +17,10 @@ console.log(titulo);
 
 var start = function() {
     if(term === "concert-this") {
-        show();}
+        show();
+    }else if(term === "movie-this") {
+        movie();
+    }
     // }else if( term === "spotify-this-song") {
     //     music();
     // }else if(term === "movie-this") {
@@ -45,6 +48,22 @@ var show = function() {
         });
     });
 };
+
+var movie = function() {
+    var pelicula = titulo;
+    console.log(pelicula);
+    var URL = "http://www.omdbapi.com/?t=" + pelicula + "&y=&plot=short&apikey=trilogy";
+    console.log(URL);
+    axios.get(URL).then(
+        function(response) {
+            var jsonData = response.data;
+            console.log(jsonData);
+            // var movieData = [
+
+            // ]
+        }
+    )
+}
 
 
 // var music = function() {
