@@ -20,12 +20,9 @@ var start = function() {
         show();
     }else if(term === "movie-this") {
         movie();
+    }else if(term === "spotify-this-song") {
+        music();
     }
-    // }else if( term === "spotify-this-song") {
-    //     music();
-    // }else if(term === "movie-this") {
-    //     movie();
-    // }
     
 };
 
@@ -59,28 +56,45 @@ var movie = function() {
             //console.log(jsonData);
              var movieData = [
             "Title: " + jsonData.Title,
-            "Year: " + jsonData.Year //year
-            //imdb rating
-            //rotten tomatos rating
-            //country
-            //language 
-            //plot
-            //actors 
-             ];
+            "Year: " + jsonData.Year, 
+            "IMDB Ratings: " + jsonData.Ratings[0].Value,
+            "Rotten Tomatos Ratings: " + jsonData.Ratings[1].Value,
+            "Country: " + jsonData.Country,
+            "Language: " + jsonData.Language,
+            "Plot: " + jsonData.Plot,
+            "Actors: " + jsonData.Actors
+            ].join("\n\n");
 
-             console.log(movieData);
+            fs.appendFile("log.txt",pelicula + movieData, function(err) {
+                if(err) throw(err);
+                console.log(movieData);
+            });      
         });
 };
 
 
-// var music = function() {
-//     spotify.search({ type: "track",query: "All the small things"}, function(err, data) {
-//     if(err) {
-//         return console.log("Error occured " + err);
-//     }
-//     console.log(data);
-// });
-// };
+var music = function() {
+   var cancion = titulo;
+   console.log(cancion);
+
+    spotify.search({ type: "track",query: cancion}, function(err, data) {
+    if(err) {
+        return console.log("Error occured " + err);
+    }
+    var songData =[
+        "Artist Name: " + data.tracks.items[0].artists[0].name,
+        "Song Name: " + data.tracks.items[0].name,
+        "Preview URL: " + data.tracks.items[0].preview_url,
+        "Album: " + data.tracks.items[0].album.name
+    ].join("\n\n");
+    
+    fs.appendFile("log.txt",cancion + songData, function(err) {
+        if(err) throw(err);
+        console.log(songData);
+    });
+    
+    });
+};
 
 
 start();
