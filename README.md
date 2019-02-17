@@ -26,4 +26,5 @@ spotify-this-song     for a song
 
 
 All the searches you make will be logged in a text file named log.txt
-Have fun
+### Have fun ###
+
