@@ -5,13 +5,13 @@ var fs = require("fs");
 var keys = require("./keys.js");
 var Spotify = require("node-spotify-api")
 var spotify= new Spotify(keys.spotify);
-console.log(spotify);
+// console.log(spotify);
 
 //Command line interactions
 var term= process.argv[2];
-console.log(term);
+// console.log(term);
 var titulo= process.argv.slice(3).join(" ");
-console.log(titulo);
+// console.log(titulo);
 
 // Action
 
@@ -28,9 +28,9 @@ var start = function() {
 
 var show = function() {
     var artist = titulo;
-    console.log(artist);
+    // console.log(artist);
     var URL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
-    console.log(URL);
+    // console.log(URL);
     axios.get(URL).then(function(response) {
         var jsonData = response.data;
         var artistData = [
@@ -48,9 +48,9 @@ var show = function() {
 
 var movie = function() {
     var pelicula = titulo;
-    console.log(pelicula);
+    // console.log(pelicula);
     var URL = "http://www.omdbapi.com/?t=" + pelicula + "&y=&plot=short&apikey=trilogy";
-    console.log(URL);
+    // console.log(URL);
     axios.get(URL).then(function(response) {
             var jsonData = response.data;
             //console.log(jsonData);
@@ -75,7 +75,7 @@ var movie = function() {
 
 var music = function() {
    var cancion = titulo;
-   console.log(cancion);
+//    console.log(cancion);
 
     spotify.search({ type: "track",query: cancion}, function(err, data) {
     if(err) {
@@ -92,7 +92,7 @@ var music = function() {
         if(err) throw(err);
         console.log(songData);
     });
-    
+
     });
 };
 

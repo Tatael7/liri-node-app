@@ -58,4 +58,66 @@ Song Name: Black Smoke Rising
 
 Preview URL: null
 
-Album: From The Fires
+Album: From The Firesmy neighbor totoroTitle: My Neighbor Totoro
+
+Year: 1988
+
+IMDB Ratings: 8.2/10
+
+Rotten Tomatos Ratings: 94%
+
+Country: Japan
+
+Language: Japanese
+
+Plot: When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.
+
+Actors: Noriko Hidaka, Chika Sakamoto, Shigesato Itoi, Sumi Shimamotonever gonna give you upArtist Name: Rick Astley
+
+Song Name: Never Gonna Give You Up
+
+Preview URL: https://p.scdn.co/mp3-preview/22bf10aff02db272f0a053dff5c0063d729df988?cid=3bf6cb1fdf154ea097fd8abdd0655685
+
+Album: Whenever You Need Somebodyshawn mendesVenue: Ziggo Dome
+
+Location: Nieuw-amsterdam
+
+Date: 2019-03-07T18:00:00cast awayTitle: Cast Away
+
+Year: 2000
+
+IMDB Ratings: 7.8/10
+
+Rotten Tomatos Ratings: 89%
+
+Country: USA
+
+Language: English, Russian
+
+Plot: A FedEx executive must transform himself physically and emotionally to survive a crash landing on a deserted island.
+
+Actors: Tom Hanks, Paul Sanchez, Lari White, Leonid Citercast awayTitle: Cast Away
+
+Year: 2000
+
+IMDB Ratings: 7.8/10
+
+Rotten Tomatos Ratings: 89%
+
+Country: USA
+
+Language: English, Russian
+
+Plot: A FedEx executive must transform himself physically and emotionally to survive a crash landing on a deserted island.
+
+Actors: Tom Hanks, Paul Sanchez, Lari White, Leonid Citerpanic at the discoVenue: Honda Center
+
+Location: Anaheim
+
+Date: 2019-02-14T19:00:0921 gunsArtist Name: Green Day
+
+Song Name: 21 Guns
+
+Preview URL: https://p.scdn.co/mp3-preview/9139658121b115dac9d893ba0cbe537c9995b090?cid=3bf6cb1fdf154ea097fd8abdd0655685
+
+Album: 21st Century Breakdown
